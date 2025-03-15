@@ -35,5 +35,5 @@ Memory Management Techniques:
 - Split Block: Large blocks are split into smaller chunks if the remaining space is sufficient.
 - Best Fit Allocation: Allocates memory from the best-fitting free block to minimize wasted space.
 - Heap Preallocation: A chunk of memory (e.g., 128 KB) is preallocated when the heap is first used, reducing the need for repeated brk() syscalls for small allocations.
-- 
+ 
 This allocator aims to efficiently manage memory while reducing fragmentation, making it suitable for systems with limited resources.
